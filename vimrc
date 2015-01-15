@@ -12,6 +12,7 @@ Plugin 'bling/vim-airline'
 Plugin 'dhruvasagar/vim-table-mode'
 Plugin 'flazz/vim-colorschemes'
 Plugin 'hallison/vim-markdown'
+Plugin 'jceb/vim-orgmode'
 Plugin 'kien/ctrlp.vim'
 Plugin 'klen/python-mode'
 Plugin 'nelstrom/vim-markdown-folding'
@@ -19,7 +20,6 @@ Plugin 'scrooloose/nerdcommenter'
 Plugin 'tpope/vim-fugitive'
 Plugin 'vim-scripts/kwbdi.vim'
 Plugin 'vim-scripts/speeddating.vim'
-Plugin 'vim-scripts/vim-orgmode'
 
 call vundle#end()
 
