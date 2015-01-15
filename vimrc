@@ -2,25 +2,26 @@ set nocompatible
 filetype off
 
 " Vundle
-set rtp+=~/.vim/bundle/vundle/
-call vundle#rc()
-Bundle 'gmarik/vundle'
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+Plugin 'gmarik/Vundle.vim'
 
-" Bundles
-Bundle 'Lokaltog/powerline-fonts'
-Bundle 'aklt/plantuml-syntax'
-Bundle 'bling/vim-airline'
-Bundle 'dhruvasagar/vim-table-mode'
-Bundle 'flazz/vim-colorschemes'
-Bundle 'hallison/vim-markdown'
-Bundle 'kien/ctrlp.vim'
-Bundle 'klen/python-mode'
-Bundle 'nelstrom/vim-markdown-folding'
-Bundle 'scrooloose/nerdcommenter'
-Bundle 'tpope/vim-fugitive'
-Bundle 'vim-scripts/kwbdi.vim'
-Bundle 'vim-scripts/vim-orgmode'
-Bundle 'vim-scripts/speeddating.vim'
+Plugin 'Lokaltog/powerline-fonts'
+Plugin 'aklt/plantuml-syntax'
+Plugin 'bling/vim-airline'
+Plugin 'dhruvasagar/vim-table-mode'
+Plugin 'flazz/vim-colorschemes'
+Plugin 'hallison/vim-markdown'
+Plugin 'kien/ctrlp.vim'
+Plugin 'klen/python-mode'
+Plugin 'nelstrom/vim-markdown-folding'
+Plugin 'scrooloose/nerdcommenter'
+Plugin 'tpope/vim-fugitive'
+Plugin 'vim-scripts/kwbdi.vim'
+Plugin 'vim-scripts/speeddating.vim'
+Plugin 'vim-scripts/vim-orgmode'
+
+call vundle#end()
 
 "-----------------------------------------------------------------------------
 " General
