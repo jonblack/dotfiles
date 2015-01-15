@@ -20,6 +20,7 @@ Plugin 'scrooloose/nerdcommenter'
 Plugin 'tpope/vim-fugitive'
 Plugin 'vim-scripts/kwbdi.vim'
 Plugin 'vim-scripts/speeddating.vim'
+Plugin 'wting/rust.vim'
 
 call vundle#end()
 
