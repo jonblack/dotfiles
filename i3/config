@@ -159,7 +159,7 @@ bindsym XF86AudioLowerVolume exec amixer -q set Master 3275- unmute
 bindsym XF86AudioMute exec amixer -q set Master toggle
 
 ## Lock screen
-bindsym $mod+Delete exec i3lock
+bindsym $mod+Delete exec i3lock -c 000000
 
 ## Applications
 bindsym $mod+g exec gvim
