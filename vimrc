@@ -75,12 +75,7 @@ set guioptions=ac
 " Set the default theme
 if has("gui_running")
     colorscheme solarized
-    " Set the theme type depending on the time of day
-    if strftime("%H") < 20
-      set background=light
-    else
-      set background=dark
-    endif
+    set background=dark
 else
     colorscheme moria
 endif
