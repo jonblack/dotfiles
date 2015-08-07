@@ -108,7 +108,9 @@ let g:airline#extensions#syntastic#enabled=1
 
 " ctrlp
 let g:ctrlp_custom_ignore = {
-    \ 'file': '\v(\.class)$'}
+    \ 'dir':  '\v[\/](\.(git|hg|svn)|node_modules)$',
+    \ 'file': '\v\.(exe|so|dll|class)$',
+    \ }
 
 " python-mode
 let g:pymode_doc = 0
