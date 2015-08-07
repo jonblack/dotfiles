@@ -27,6 +27,7 @@ Plugin 'tpope/vim-fugitive'
 Plugin 'vim-scripts/kwbdi.vim'
 Plugin 'wellle/targets.vim'
 Plugin 'wting/rust.vim'
+Plugin 'mustache/vim-mustache-handlebars'
 
 call vundle#end()
 
