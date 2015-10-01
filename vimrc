@@ -109,7 +109,7 @@ let g:airline#extensions#syntastic#enabled=1
 
 " ctrlp
 let g:ctrlp_custom_ignore = {
-    \ 'dir':  '\v[\/](\.(git|hg|svn)|node_modules)$',
+    \ 'dir':  '\v[\/](\.(git|hg|svn)|node_modules|tmp|dist)$',
     \ 'file': '\v\.(exe|so|dll|class)$',
     \ }
 
