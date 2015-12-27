@@ -113,6 +113,7 @@ let g:ctrlp_custom_ignore = {
     \ 'dir':  '\v[\/](\.(git|hg|svn)|node_modules|tmp|dist)$',
     \ 'file': '\v\.(exe|so|dll|class)$',
     \ }
+let g:ctrlp_working_path_mode = 'a'
 
 " python-mode
 let g:pymode_doc = 0
