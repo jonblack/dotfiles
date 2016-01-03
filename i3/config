@@ -154,8 +154,8 @@ bar {
 # Custom key bindings
 
 ## Media keys
-bindsym XF86AudioRaiseVolume exec amixer -q set Master 3275+ unmute
-bindsym XF86AudioLowerVolume exec amixer -q set Master 3275- unmute
+bindsym XF86AudioRaiseVolume exec amixer -q set Master 5%+ unmute
+bindsym XF86AudioLowerVolume exec amixer -q set Master 5%- unmute
 bindsym XF86AudioMute exec amixer -q set Master toggle
 
 ## Lock screen
