@@ -7,9 +7,11 @@ call vundle#begin()
 Plugin 'gmarik/Vundle.vim'
 
 Plugin 'Lokaltog/powerline-fonts'
+Plugin 'Valloric/YouCompleteMe'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'bling/vim-airline'
 Plugin 'dhruvasagar/vim-table-mode'
+Plugin 'easymotion/vim-easymotion'
 Plugin 'flazz/vim-colorschemes'
 Plugin 'hallison/vim-markdown'
 Plugin 'junegunn/vim-easy-align'
