@@ -30,6 +30,8 @@ Plugin 'thinca/vim-qfreplace'
 Plugin 'tpope/vim-fugitive'
 Plugin 'vim-scripts/kwbdi.vim'
 Plugin 'wellle/targets.vim'
+Plugin 'junegunn/goyo.vim'
+Plugin 'junegunn/limelight.vim'
 
 call vundle#end()
 
@@ -111,7 +113,7 @@ let g:airline#extensions#syntastic#enabled=1
 
 " ctrlp
 let g:ctrlp_custom_ignore = {
-    \ 'dir':  '\v[\/](\.(git|hg|svn)|node_modules|tmp|dist)$',
+    \ 'dir':  '\v[\/](\.(git|hg|svn)|bower_components|node_modules|tmp|dist)$',
     \ 'file': '\v\.(exe|so|dll|class)$',
     \ }
 let g:ctrlp_working_path_mode = 'a'
