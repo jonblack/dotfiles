@@ -82,3 +82,6 @@ export PATH="/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games"
 source ~/.zplug/zplug
 
 zplug "rimraf/k"
+
+export NVM_DIR="/home/jon/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
