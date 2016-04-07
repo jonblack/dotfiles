@@ -118,13 +118,9 @@ let g:ctrlp_custom_ignore = {
     \ }
 let g:ctrlp_working_path_mode = 'a'
 
-" python-mode
-let g:pymode_doc = 0
-set completeopt=menu
-
-" Bug -> https://github.com/klen/python-mode/issues/342
-let g:pymode_rope_lookup_project = 0
-let g:pymode_rope = 0
+" syntastic
+let g:syntastic_python_checkers=['flake8']
+let g:syntastic_python_flake8_args='--ignore=E501,E225'
 
 "-----------------------------------------------------------------------------
 " Mappings
