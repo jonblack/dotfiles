@@ -78,6 +78,9 @@ export PATH="/usr/local/bin:/usr/bin:/bin:/usr/local/games:/usr/games"
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+alias apts="aptitude search"
+alias apti="sudo aptitude install"
+alias grepr="grep -rn --color"
 
 source ~/.zplug/zplug
 
