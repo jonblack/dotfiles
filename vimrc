@@ -118,6 +118,7 @@ let g:ctrlp_custom_ignore = {
     \ 'file': '\v\.(exe|so|dll|class)$',
     \ }
 let g:ctrlp_working_path_mode = 'a'
+let g:ctrlp_show_hidden = 1
 
 " syntastic
 let g:syntastic_python_checkers=['flake8']
