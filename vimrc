@@ -59,6 +59,7 @@ set noswapfile " Ain't nobody got time for swap files
 set ignorecase " Ignore case when searching
 set hlsearch   " Highlight last used search pattern
 set incsearch  " Do incremental searching
+set foldlevel=99
 
 "-----------------------------------------------------------------------------
 " Formattings
