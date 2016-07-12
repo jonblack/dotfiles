@@ -61,6 +61,11 @@ set hlsearch   " Highlight last used search pattern
 set incsearch  " Do incremental searching
 set foldlevel=99
 
+" Ruby settings
+:autocmd Filetype ruby set softtabstop=2
+:autocmd Filetype ruby set sw=2
+:autocmd Filetype ruby set ts=2
+
 "-----------------------------------------------------------------------------
 " Formattings
 "-----------------------------------------------------------------------------
