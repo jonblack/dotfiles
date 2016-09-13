@@ -161,7 +161,7 @@ bindsym $mod+Escape exec ~/.i3/pixlock.sh
 
 ## Applications
 bindsym $mod+g exec gvim
-bindsym $mod+i exec iceweasel
+bindsym $mod+i exec firefox
 
 # Set the desktop colour
 exec --no-startup-id xsetroot -solid "#A7A7A7"
