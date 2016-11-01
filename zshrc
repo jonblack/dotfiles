@@ -82,10 +82,6 @@ alias apts="aptitude search"
 alias apti="sudo aptitude install"
 alias grepr="grep -rn --color"
 
-source ~/.zplug/zplug
-
-zplug "rimraf/k"
-
 export NVM_DIR="/home/jon/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
 
