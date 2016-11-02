@@ -1,4 +1,4 @@
-source dotfiles/submodules/antigen/antigen.zsh
+source ~/dotfiles/submodules/antigen/antigen.zsh
 
 antigen use oh-my-zsh
 
