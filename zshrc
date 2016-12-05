@@ -5,7 +5,7 @@ antigen use oh-my-zsh
 antigen bundle git
 antigen bundle zsh-users/zsh-syntax-highlighting
 
-antigen theme wedisagree
+antigen theme alanpeabody
 antigen apply
 
 # Aliases
