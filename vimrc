@@ -66,6 +66,16 @@ set foldlevel=99
 :autocmd Filetype ruby set sw=2
 :autocmd Filetype ruby set ts=2
 
+" Html settings
+:autocmd Filetype html set softtabstop=2
+:autocmd Filetype html set sw=2
+:autocmd Filetype html set ts=2
+
+" javascript settings
+:autocmd Filetype javascript set softtabstop=2
+:autocmd Filetype javascript set sw=2
+:autocmd Filetype javascript set ts=2
+
 "-----------------------------------------------------------------------------
 " Formattings
 "-----------------------------------------------------------------------------
