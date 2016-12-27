@@ -16,3 +16,5 @@ alias apts="aptitude search"
 alias apti="sudo aptitude install"
 alias grepr="grep -rn --color"
 alias ls="ls --color --group-directories-first"
+
+source $HOME/.cargo/env
