@@ -1,0 +1,4 @@
+#!/bin/bash
+
+brightness=`xbacklight -get`
+echo ${brightness%.*}%
