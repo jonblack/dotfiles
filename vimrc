@@ -6,7 +6,7 @@ set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 
-Plugin 'Lokaltog/powerline-fonts'
+Plugin 'powerline/fonts'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'vim-airline/vim-airline'
 Plugin 'vim-airline/vim-airline-themes'
@@ -32,6 +32,7 @@ Plugin 'vim-scripts/kwbdi.vim'
 Plugin 'wellle/targets.vim'
 Plugin 'junegunn/goyo.vim'
 Plugin 'junegunn/limelight.vim'
+Plugin 'udalov/kotlin-vim'
 
 call vundle#end()
 
@@ -120,7 +121,7 @@ set fdm=syntax
 " powerline
 set laststatus=2
 set t_Co=256
-set guifont=Droid\ Sans\ Mono\ for\ Powerline\ 11
+set guifont=Droid\ Sans\ Mono\ for\ Powerline\ 12
 
 " airline
 let g:airline_powerline_fonts=1
