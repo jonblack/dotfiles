@@ -132,10 +132,13 @@ let g:airline#extensions#branch#enabled=1
 let g:airline#extensions#syntastic#enabled=1
 
 " ctrlp
-let g:ctrlp_custom_ignore = {
-    \ 'dir':  '\v[\/](\.(git|hg|svn)|bower_components|node_modules|tmp|dist)$',
-    \ 'file': '\v\.(exe|so|dll|class)$',
-    \ }
+let g:ctrlp_user_command = {
+  \ 'types': {
+    \ 1: ['.git', 'cd %s && git ls-files --cached --exclude-standard --others'],
+    \ 2: ['.hg', 'hg --cwd %s locate -I .'],
+    \ },
+  \ 'fallback': 'find %s -type f'
+  \ }
 let g:ctrlp_working_path_mode = 'a'
 let g:ctrlp_show_hidden = 1
 
