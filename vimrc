@@ -122,7 +122,7 @@ set fdm=syntax
 " powerline
 set laststatus=2
 set t_Co=256
-set guifont=Droid\ Sans\ Mono\ for\ Powerline\ 12
+set guifont=Droid\ Sans\ Mono\ for\ Powerline\ 10
 
 " airline
 let g:airline_powerline_fonts=1
