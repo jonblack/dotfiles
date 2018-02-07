@@ -37,7 +37,6 @@ Plug 'junegunn/goyo.vim'
 Plug 'junegunn/limelight.vim'
 Plug 'mattn/emmet-vim'
 Plug 'myusuf3/numbers.vim'
-Plug 'powerline/fonts'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 
@@ -96,7 +95,6 @@ let &colorcolumn=join(range(80,999), ",")
 let g:airline_powerline_fonts=1
 let g:airline_detect_modified=1
 let g:airline#extensions#branch#enabled=1
-let g:airline#extensions#syntastic#enabled=1
 
 " ctrlp
 let g:ctrlp_user_command = {
