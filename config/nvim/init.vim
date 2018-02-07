@@ -83,7 +83,7 @@ set termguicolors
 set background=dark
 set guifont=Droid\ Sans\ Mono\ for\ Powerline\ 11
 
-colorscheme OceanicNext
+colorscheme gruvbox
 
 let &colorcolumn=join(range(80,999), ",")
 
