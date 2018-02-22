@@ -18,3 +18,7 @@ alias grepr="grep -rn --color"
 alias ls="ls --color --group-directories-first"
 
 source $HOME/.cargo/env
+
+#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
+export SDKMAN_DIR="/home/jon/.sdkman"
+[[ -s "/home/jon/.sdkman/bin/sdkman-init.sh" ]] && source "/home/jon/.sdkman/bin/sdkman-init.sh"
