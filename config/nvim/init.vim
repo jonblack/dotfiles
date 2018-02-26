@@ -36,7 +36,6 @@ Plug 'Yggdroot/indentLine'
 Plug 'junegunn/goyo.vim'
 Plug 'junegunn/limelight.vim'
 Plug 'mattn/emmet-vim'
-Plug 'myusuf3/numbers.vim'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 
@@ -125,12 +124,6 @@ nmap <F6> <Plug>(JavaComplete-Imports-AddMissing)
 imap <F6> <Plug>(JavaComplete-Imports-AddMissing)
 nmap <F7> <Plug>(JavaComplete-Imports-RemoveUnused)
 imap <F7> <Plug>(JavaComplete-Imports-RemoveUnused)
-
-" numbers
-let g:numbers_exclude = ['unite', 'tagbar', 'startify', 'gundo', 'vimshell', 'w3m', 'goyo']
-
-nnoremap <F2> :NumbersToggle<CR>
-nnoremap <F3> :NumbersOnOff<CR>
 
 " vim-ack
 if executable('ag')
