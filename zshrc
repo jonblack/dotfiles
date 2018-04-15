@@ -21,6 +21,11 @@ source $HOME/.cargo/env
 
 export PATH=/home/jon/.bin:$PATH
 
+# Android development
+export ANDROID_EMULATOR_USE_SYSTEM_LIBS=1
+export ANDROID_HOME=/home/jon/.android-sdk
+export PATH=$PATH:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools
+
 #THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
 export SDKMAN_DIR="/home/jon/.sdkman"
 [[ -s "/home/jon/.sdkman/bin/sdkman-init.sh" ]] && source "/home/jon/.sdkman/bin/sdkman-init.sh"
