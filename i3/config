@@ -149,6 +149,8 @@ bar {
         tray_output none
 }
 
+focus_follows_mouse no
+
 # Custom key bindings
 
 ## Media keys
