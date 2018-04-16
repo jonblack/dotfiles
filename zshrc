@@ -8,7 +8,7 @@ antigen bundle git
 antigen bundle zsh-users/zsh-syntax-highlighting
 antigen bundle lukechilds/zsh-nvm
 
-antigen theme alanpeabody
+antigen theme blinks
 antigen apply
 
 # Aliases
