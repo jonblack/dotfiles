@@ -194,7 +194,7 @@ thermal-zone = 0
 warn-temperature = 60
 
 format = <ramp> <label>
-format-underline = ${colors.serika-underline}
+format-underline = ${colors.serika-yellow}
 format-warn = <ramp> <label-warn>
 format-warn-underline = ${colors.alert}
 
