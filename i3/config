@@ -141,15 +141,18 @@ mode "resize" {
 
 bindsym $mod+r mode "resize"
 
-# Start i3bar to display a workspace bar (plus the system information i3status
-# finds out, if available)
-bar {
-        position top
-        status_command i3blocks -c ~/.i3/i3blocks.conf
-        tray_output none
-}
-
 focus_follows_mouse no
+
+# status bar
+
+## i3blocks
+#bar {
+#        position top
+#        status_command i3blocks -c ~/.i3/i3blocks.conf
+#        tray_output none
+#}
+
+exec_always --no-startup-id /home/jon/.config/polybar/launch.sh
 
 # Custom key bindings
 
