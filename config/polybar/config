@@ -91,10 +91,10 @@ type = internal/date
 interval = 5
 
 date = "  %Y-%m-%d "
-date-alt = " %Y-%m-%d"
+date-alt = "  %Y-%m-%d "
 
 time = %H:%M
-time-alt = %H:%M:%S
+time-alt = %H:%M
 
 format-prefix = 
 format-underline = ${colors.serika-yellow}
@@ -103,11 +103,11 @@ label = %date% %time%
 
 [module/eth]
 type = internal/network
-interface = enp0s31f6
+interface = enp11s0
 interval = 3.0
 
 format-connected-prefix = " "
-format-connected-underline = ${colors.serika-underline}
+format-connected-underline = ${colors.serika-yellow}
 label-connected = %local_ip%
 
 format-disconnected = <label-disconnected>
