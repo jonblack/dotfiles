@@ -110,7 +110,7 @@ format-connected-prefix = " "
 format-connected-underline = ${colors.serika-yellow}
 label-connected = %local_ip%
 
-format-disconnected = <label-disconnected>
+format-disconnected =
 format-disconnected-foreground = ${colors.foreground-alt}
 format-disconnected-prefix = " " 
 format-disconnected-underline = ${colors.alert}
@@ -216,7 +216,7 @@ format-connected-prefix = " "
 format-connected-underline = ${colors.serika-yellow}
 label-connected = %essid% %local_ip% (%signal%%)
 
-format-disconnected = <label-disconnected>
+format-disconnected =
 format-disconnected-underline = ${colors.alert}
 label-disconnected = not connected
 label-disconnected-foreground = ${colors.foreground-alt}
