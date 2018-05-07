@@ -31,6 +31,8 @@ height = 27
 radius = 0.0
 fixed-center = false
 
+monitor = ${env:MONITOR}
+
 background = ${colors.serika-dark}
 foreground = ${colors.foreground}
 
