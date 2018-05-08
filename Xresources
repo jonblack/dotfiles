@@ -13,7 +13,7 @@ rofi.width: 50
 rofi.lines: 5
 rofi.columns: 1
 rofi.font: Droid Sans Mono 12
-rofi.bw: 5
+rofi.bw: 4
 rofi.location: 0
 rofi.padding: 5
 rofi.fixed-num-lines: true
