@@ -1,20 +1,22 @@
-rofi.opacity: 90
-rofi.width: 1720
+rofi.fullscreen: false
+
+rofi.fake-transparency: true
+rofi.hide-scrollbar: true
+
+rofi.color-enabled: true
+rofi.color-normal: #323337, #dfdfdf, #323337, #3f3f3f, #fecd04
+rofi.color-urgent: #323337, #dfdfdf, #323337, #3f3f3f, #fecd04
+rofi.color-active: #323337, #dfdfdf, #323337, #3f3f3f, #fecd04
+rofi.color-window: #323337, #000, #fecd04
+rofi.separator-style: solid
+rofi.width: 50
 rofi.lines: 5
 rofi.columns: 1
-rofi.font: Droid Sans Mono 11
-rofi.fg: #9e9e9e
-rofi.bg: #333333
-rofi.hlfg: #dedede
-rofi.hlbg: #333333
-rofi.bc: #dedede
-rofi.bw: 2
-rofi.location: 8
+rofi.font: Droid Sans Mono 12
+rofi.bw: 5
+rofi.location: 0
 rofi.padding: 5
-rofi.yoffset: 0
-rofi.xoffset: 860
-rofi.fixed-num-lines: false
-rofi.sidebar-mode: false
+rofi.fixed-num-lines: true
 rofi.terminal: gnome-terminal
 rofi.ssh-command: {terminal} -e "{ssh-client} {host}"
 rofi.key-run: F12
