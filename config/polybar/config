@@ -53,7 +53,7 @@ font-1 = FontAwesome:pixelsize=10;0
 
 modules-left = i3
 modules-center =
-modules-right = xbacklight pulseaudio memory wlan eth battery temperature date
+modules-right = xbacklight pulseaudio memory wlan eth battery temperature date time
 
 tray-position = right
 tray-padding = 2
@@ -92,16 +92,25 @@ ramp-capacity-4 = 
 type = internal/date
 interval = 5
 
-date = "  %Y-%m-%d "
+date = " %A %d-%m-%Y (%W)"
 date-alt = "  %Y-%m-%d "
-
-time = %H:%M
-time-alt = %H:%M
 
 format-prefix = 
 format-underline = ${colors.serika-yellow}
 
-label = %date% %time%
+label = %date%
+
+[module/time]
+type = internal/date
+interval = 5
+
+time = "  %H:%M"
+time-alt = "  %H:%M"
+
+format-prefix = 
+format-underline = ${colors.serika-yellow}
+
+label = %time%
 
 [module/eth]
 type = internal/network
