@@ -1,8 +1,8 @@
-rofi.fullscreen: false
+! rofi
 
+rofi.fullscreen: false
 rofi.fake-transparency: true
 rofi.hide-scrollbar: true
-
 rofi.color-enabled: true
 rofi.color-normal: #323337, #dfdfdf, #323337, #3f3f3f, #fecd04
 rofi.color-urgent: #323337, #dfdfdf, #323337, #3f3f3f, #fecd04
@@ -22,3 +22,43 @@ rofi.ssh-command: {terminal} -e "{ssh-client} {host}"
 rofi.key-run: F12
 rofi.key-window: mod1+F2
 rofi.key-ssh: mod1+F3
+
+! urxvt
+
+urxvt.termName: rxvt-unicode
+urxvt.scrollBar: fals
+urxvt.font: xft:Droid Sans Mono for Powerline:pixelsize=14:style=Regular:antialias=true
+urxvt.saveLines: 1000000
+urxvt.urlLauncher: /usr/bin/firefox
+
+*.foreground:   #dfdfdf
+*.background:   #323337
+*.cursorColor:  #fecd04
+! black
+*.color0:       #323337
+*.color8:       #323337
+! red
+*.color1:       #dc7670
+*.color9:       #dc7670
+! green
+*.color2:       #84c786
+*.color10:      #84c786
+! yellow
+*.color3:       #fecd04
+*.color11:      #fecd04
+! blue
+*.color4:       #82c5dc
+*.color12:      #82c5dc
+! magenta
+*.color5:       #bb7744
+*.color13:      #bb7744
+! cyan
+*.color6:       #fecd04
+*.color14:      #fecd04
+! white
+*.color7:       #dfdfdf
+*.color15:      #dfdfdf
+! others
+URxvt.colorIT:  #78824B
+URxvt.colorBD:  #d3d3d3
+URxvt.colorUL:  #dfdfdf
