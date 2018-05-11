@@ -52,7 +52,7 @@ font-0 = fixed:pixelsize=10;1
 font-1 = FontAwesome:pixelsize=10;0
 
 modules-left = i3
-modules-center =
+modules-center = mpd
 modules-right = xbacklight pulseaudio memory wlan eth battery temperature date time
 
 tray-position = right
@@ -164,6 +164,36 @@ interval = 2
 format-prefix = " "
 format-underline = ${colors.serika-yellow}
 label = %gb_used% / %gb_total% (%percentage_used%%)
+
+[module/mpd]
+type = internal/mpd
+host = 127.0.0.1
+port = 6600
+
+format-online = <icon-prev> <toggle> <icon-next> <label-song> <label-time>
+format-playing = ${self.format-online}
+format-paused = ${self.format-online}
+format-stopped =
+
+label-offline = mpd is offline
+label-song = 𝄞 %artist% - %title%
+icon-play = 
+icon-pause = 
+icon-stop = 
+icon-prev = 
+icon-next = 
+icon-seekb = 
+icon-seekf = 
+icon-random = 
+icon-repeat = 
+
+toggle-on-foreground = #ff
+toggle-off-foreground = #55
+
+bar-progress-width = 10
+bar-progress-indicator = |
+bar-progress-fill = ─
+bar-progress-empty = ─
 
 [module/pulseaudio]
 type = internal/pulseaudio
