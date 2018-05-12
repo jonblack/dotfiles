@@ -32,11 +32,11 @@ urxvt.saveLines: 1000000
 urxvt.urlLauncher: /usr/bin/firefox
 
 *.foreground:   #dfdfdf
-*.background:   #323337
+*.background:   #000000
 *.cursorColor:  #dfdfdf
 ! black
-*.color0:       #323337
-*.color8:       #323337
+*.color0:       #000000
+*.color8:       #000000
 ! red
 *.color1:       #dc7670
 *.color9:       #dc7670
