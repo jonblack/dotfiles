@@ -52,7 +52,7 @@ font-0 = fixed:pixelsize=10;1
 font-1 = FontAwesome:pixelsize=10;0
 
 modules-left = i3
-modules-center = mpd
+modules-center =
 modules-right = xbacklight pulseaudio memory wlan eth battery temperature date time
 
 tray-position = right
