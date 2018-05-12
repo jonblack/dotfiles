@@ -25,7 +25,6 @@ rofi.key-ssh: mod1+F3
 
 ! urxvt
 
-urxvt.termName: rxvt-unicode
 urxvt.scrollBar: fals
 urxvt.font: xft:Droid Sans Mono for Powerline:pixelsize=14:style=Regular:antialias=true
 urxvt.saveLines: 1000000
