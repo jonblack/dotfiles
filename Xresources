@@ -33,7 +33,7 @@ urxvt.urlLauncher: /usr/bin/firefox
 
 *.foreground:   #dfdfdf
 *.background:   #323337
-*.cursorColor:  #fecd04
+*.cursorColor:  #dfdfdf
 ! black
 *.color0:       #323337
 *.color8:       #323337
