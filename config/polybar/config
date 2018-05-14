@@ -53,7 +53,7 @@ font-1 = FontAwesome:pixelsize=10;0
 
 modules-left = i3
 modules-center =
-modules-right = xbacklight pulseaudio memory wlan eth battery temperature date time
+modules-right = xbacklight pulseaudio memory wlan eth_home eth_work battery temperature date time
 
 tray-position = right
 tray-padding = 2
@@ -112,9 +112,25 @@ format-underline = ${colors.serika-yellow}
 
 label = %time%
 
-[module/eth]
+[module/eth_home]
 type = internal/network
 interface = enp11s0
+interval = 3.0
+
+format-connected-prefix = " "
+format-connected-underline = ${colors.serika-yellow}
+label-connected = %local_ip%
+
+format-disconnected =
+format-disconnected-foreground = ${colors.foreground-alt}
+format-disconnected-prefix = " " 
+format-disconnected-underline = ${colors.alert}
+label-disconnected = not connected
+label-disconnected-foreground = ${colors.foreground-alt}
+
+[module/eth_work]
+type = internal/network
+interface = enp0s31f6
 interval = 3.0
 
 format-connected-prefix = " "
