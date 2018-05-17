@@ -29,7 +29,7 @@ margin-bottom = 5
 width = 100%
 height = 27
 radius = 0.0
-fixed-center = false
+fixed-center = true
 
 monitor = ${env:MONITOR}
 
@@ -51,9 +51,9 @@ module-margin-right = 2
 font-0 = fixed:pixelsize=10;1
 font-1 = FontAwesome:pixelsize=10;0
 
-modules-left = i3
-modules-center =
-modules-right = xbacklight pulseaudio memory wlan_home wlan_work eth_home eth_work battery temperature date time
+modules-left = temperature memory
+modules-center = i3
+modules-right = xbacklight pulseaudio wlan_home wlan_work eth_home eth_work date time
 
 tray-position = right
 tray-padding = 2
@@ -92,7 +92,7 @@ ramp-capacity-4 = 
 type = internal/date
 interval = 5
 
-date = " %A %d-%m-%Y (%W)"
+date = " %A %d %B"
 date-alt = "  %Y-%m-%d "
 
 format-prefix = 
@@ -179,43 +179,14 @@ interval = 2
 
 format-prefix = " "
 format-underline = ${colors.serika-yellow}
-label = %gb_used% / %gb_total% (%percentage_used%%)
-
-[module/mpd]
-type = internal/mpd
-host = 127.0.0.1
-port = 6600
-
-format-online = <icon-prev> <toggle> <icon-next> <label-song> <label-time>
-format-playing = ${self.format-online}
-format-paused = ${self.format-online}
-format-stopped =
-
-label-offline = mpd is offline
-label-song = 𝄞 %artist% - %title%
-icon-play = 
-icon-pause = 
-icon-stop = 
-icon-prev = 
-icon-next = 
-icon-seekb = 
-icon-seekf = 
-icon-random = 
-icon-repeat = 
-
-toggle-on-foreground = #ff
-toggle-off-foreground = #55
-
-bar-progress-width = 10
-bar-progress-indicator = |
-bar-progress-fill = ─
-bar-progress-empty = ─
+label = %gb_used%
 
 [module/pulseaudio]
 type = internal/pulseaudio
 
-format-volume = <bar-volume> <label-volume> 
+format-volume = <label-volume> 
 format-volume-prefix = " "
+format-volume-underline = ${colors.serika-yellow}
 label-volume = %percentage%%
 label-volume-foreground = ${root.foreground}
 
@@ -296,7 +267,8 @@ label-disconnected-foreground = ${colors.foreground-alt}
 [module/xbacklight]
 type = internal/xbacklight
 
-format = <ramp> <bar> <label> 
+format = <ramp> <label> 
+format-underline = ${colors.serika-yellow}
 ramp-0 = 🌕
 ramp-1 = 🌔
 ramp-2 = 🌓
