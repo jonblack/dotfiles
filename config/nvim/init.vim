@@ -84,7 +84,7 @@ set guifont=Droid\ Sans\ Mono\ for\ Powerline\ 11
 
 colorscheme gruvbox
 
-let &colorcolumn=join(range(80,999), ",")
+let &colorcolumn=join(range(100,999), ",")
 
 "-----------------------------------------------------------------------------
 " Plugin Settings
