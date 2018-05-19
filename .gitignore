@@ -1,32 +1,14 @@
-config/Android Open Source Project/
-config/Boostnote/
-config/GIMP/
-config/Keybase/
-config/Signal/
-config/Thunar/
-config/autostart/
-config/dconf/
-config/gmpc/
-config/gthumb/
-config/gtk-2.0/
-config/htop/
-config/inkscape/
-config/kactivitymanagerdrc
-config/keybase/
-config/libreoffice/
-config/menus/
-config/mimeapps.list
-config/mpd/
-config/okularpartrc
-config/okularrc
-config/pavucontrol.ini
-config/pulse/
-config/qpdfview/
-config/ranger/
-config/ristretto/
-config/syncthing/
-config/systemd/
-config/vlc/
-config/xfce4/
+# Ignore
+
+config/
+config/nvim/.netrwhist
+
 i3/scripts/anachron/
 ncmpcpp/error.log
+
+# Allow
+!config/dunst
+!config/mpd
+!config/nvim
+!config/polybar
+!config/user-dirs.dirs
