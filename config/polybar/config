@@ -51,9 +51,9 @@ module-margin-right = 2
 font-0 = fixed:pixelsize=10;1
 font-1 = FontAwesome:pixelsize=10;0
 
-modules-left = temperature memory
-modules-center = i3
-modules-right = xbacklight pulseaudio wlan_home wlan_work eth_home eth_work date time
+modules-left = i3
+modules-center = date time
+modules-right = xbacklight pulseaudio temperature memory battery wlan_home wlan_work eth_home eth_work
 
 tray-position = right
 tray-padding = 2
