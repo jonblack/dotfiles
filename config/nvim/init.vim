@@ -14,6 +14,7 @@ Plug 'osyo-manga/vim-over'
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 Plug 'artur-shaik/vim-javacomplete2'
 Plug 'dhruvasagar/vim-table-mode'
+Plug 'jiangmiao/auto-pairs'
 Plug 'scrooloose/nerdcommenter'
 Plug 'sebastianmarkow/deoplete-rust'
 Plug 'zchee/deoplete-jedi'
