@@ -68,11 +68,14 @@ set noswapfile
 set nowrap
 set number
 set pastetoggle=<F3>
+set scrolloff=10
 set shell=bash
 set shiftwidth=4
 set tabstop=4
 
 let mapleader=","
+
+autocmd BufWritePre * :%s/\s\+$//e
 
 "-----------------------------------------------------------------------------
 " GUI
