@@ -169,7 +169,7 @@ bindsym $mod+Escape exec ~/.i3/pixlock.sh
 exec xautolock -time 10 -locker '~/.i3/pixlock.sh' &
 
 ## Applications
-bindsym $mod+g exec gvim
+bindsym $mod+g exec nvim-qt
 bindsym $mod+i exec firefox
 
 # Set the desktop colour
