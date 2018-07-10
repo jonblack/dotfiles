@@ -171,6 +171,7 @@ exec xautolock -time 10 -locker '~/.i3/pixlock.sh' &
 ## Applications
 bindsym $mod+g exec nvim-qt
 bindsym $mod+i exec firefox
+bindsym $mod+t exec thunar
 
 # Set the desktop colour
 exec --no-startup-id xsetroot -solid "#A7A7A7"
