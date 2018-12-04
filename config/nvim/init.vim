@@ -46,8 +46,7 @@ Plug 'easymotion/vim-easymotion'
 Plug 'vim-scripts/kwbdi.vim'
 
 " themes
-Plug 'mhartington/oceanic-next'
-Plug 'morhetz/gruvbox'
+Plug 'chriskempson/base16-vim'
 
 call plug#end()
 
@@ -86,7 +85,7 @@ set termguicolors
 set background=dark
 set guifont=Droid\ Sans\ Mono\ for\ Powerline\ 11
 
-colorscheme gruvbox
+colorscheme base16-gruvbox-dark-pale
 
 let &colorcolumn=join(range(100,999), ",")
 
