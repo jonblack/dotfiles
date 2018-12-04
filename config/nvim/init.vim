@@ -112,7 +112,7 @@ let g:ctrlp_show_hidden = 1
 " deoplete
 let g:deoplete#enable_at_startup = 1
 let g:deoplete#sources#rust#racer_binary='/home/jon/.cargo/bin/racer'
-let g:deoplete#sources#rust#rust_source_path='/home/jon/.rust-src/rust/src'
+let g:deoplete#sources#rust#rust_source_path='/home/jon/.rustup/toolchains/stable-x86_64-unknown-linux-gnu/lib/rustlib/src/rust/src'
 
 " indentLine
 let g:indentLine_color_gui = '#343D46'
