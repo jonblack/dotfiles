@@ -82,8 +82,8 @@ format-full-prefix = " "
 format-full-prefix-foreground = ${colors.foreground-alt}
 format-full-underline = ${self.format-charging-underline}
 
-ramp-capacity-0 = 
-ramp-capacity-1 = 
+ramp-capacity-0 = %{F#ff0000}
+ramp-capacity-1 = %{F#ff0000}
 ramp-capacity-2 = 
 ramp-capacity-3 = 
 ramp-capacity-4 = 
@@ -123,7 +123,7 @@ label-connected = %local_ip%
 
 format-disconnected =
 format-disconnected-foreground = ${colors.foreground-alt}
-format-disconnected-prefix = " " 
+format-disconnected-prefix = " "
 format-disconnected-underline = ${colors.alert}
 label-disconnected = not connected
 label-disconnected-foreground = ${colors.foreground-alt}
@@ -139,7 +139,7 @@ label-connected = %local_ip%
 
 format-disconnected =
 format-disconnected-foreground = ${colors.foreground-alt}
-format-disconnected-prefix = " " 
+format-disconnected-prefix = " "
 format-disconnected-underline = ${colors.alert}
 label-disconnected = not connected
 label-disconnected-foreground = ${colors.foreground-alt}
@@ -184,14 +184,14 @@ label = %gb_used%
 [module/pulseaudio]
 type = internal/pulseaudio
 
-format-volume = <label-volume> 
+format-volume = <label-volume>
 format-volume-prefix = " "
 format-volume-underline = ${colors.serika-yellow}
 label-volume = %percentage%%
 label-volume-foreground = ${root.foreground}
 
 format-muted = <label-muted>
-format-muted-prefix = " " 
+format-muted-prefix = " "
 label-muted = "muted"
 label-muted-foreground = ${colors.foreground-alt}
 
@@ -267,7 +267,7 @@ label-disconnected-foreground = ${colors.foreground-alt}
 [module/xbacklight]
 type = internal/xbacklight
 
-format = <ramp> <label> 
+format = <ramp> <label>
 format-underline = ${colors.serika-yellow}
 ramp-0 = 🌕
 ramp-1 = 🌔
