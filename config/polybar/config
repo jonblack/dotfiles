@@ -83,7 +83,7 @@ format-full-prefix-foreground = ${colors.foreground-alt}
 format-full-underline = ${self.format-charging-underline}
 
 ramp-capacity-0 = %{F#ff0000}
-ramp-capacity-1 = %{F#ff0000}
+ramp-capacity-1 = %{F#ff9900}
 ramp-capacity-2 = 
 ramp-capacity-3 = 
 ramp-capacity-4 = 
