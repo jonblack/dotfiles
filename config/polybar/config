@@ -40,7 +40,7 @@ line-size = 3
 line-color = #f00
 
 border-size = 4
-border-color = #00000000
+border-color = ${colors.serika-dark}
 
 padding-left = 2
 padding-right = 2
@@ -49,11 +49,12 @@ module-margin-left = 2
 module-margin-right = 2
 
 font-0 = fixed:pixelsize=10;1
-font-1 = FontAwesome:pixelsize=10;0
+font-1 = FontAwesome5Free:style=Solid:pixelsize=11
+font-2 = FontAwesome5Brands:style=Solid:pixelsize=11
 
 modules-left = i3
 modules-center = date time
-modules-right = xbacklight pulseaudio temperature memory battery wlan_home wlan_work eth_home eth_work
+modules-right = backlight xbacklight pulseaudio temperature memory battery wlan_home wlan_work eth_home eth_work
 
 tray-position = right
 tray-padding = 2
@@ -264,8 +265,9 @@ format-disconnected-underline = ${colors.alert}
 label-disconnected = not connected
 label-disconnected-foreground = ${colors.foreground-alt}
 
-[module/xbacklight]
-type = internal/xbacklight
+[module/backlight]
+type = internal/backlight
+card = intel_backlight
 
 format = <ramp> <label>
 format-underline = ${colors.serika-yellow}
@@ -274,34 +276,3 @@ ramp-1 = 🌔
 ramp-2 = 🌓
 ramp-3 = 🌒
 ramp-4 = 🌑
-
-bar-width = 10
-bar-indicator = |
-bar-indicator-foreground = #ff
-bar-indicator-font = 2
-bar-fill = ─
-bar-fill-font = 2
-bar-fill-foreground = ${colors.serika-yellow}
-bar-empty = ─
-bar-empty-font = 2
-bar-empty-foreground = ${colors.foreground-alt}
-
-[module/xkeyboard]
-type = internal/xkeyboard
-blacklist-0 = num lock
-
-format-prefix = " "
-format-prefix-foreground = ${colors.foreground-alt}
-format-prefix-underline = ${colors.secondary}
-
-label-layout = %layout%
-label-layout-underline = ${colors.secondary}
-
-label-indicator-padding = 2
-label-indicator-margin = 1
-label-indicator-background = ${colors.secondary}
-label-indicator-underline = ${colors.secondary}
-
-[module/xwindow]
-type = internal/xwindow
-label = %title:0:30:...%

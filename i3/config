@@ -145,33 +145,50 @@ focus_follows_mouse yes
 
 # status bar
 
-## i3blocks
-#bar {
-#        position top
-#        status_command i3blocks -c ~/.i3/i3blocks.conf
-#        tray_output none
-#}
-
 exec_always --no-startup-id /home/jon/.config/polybar/launch.sh
 
 # Custom key bindings
 
 ## Media keys
-bindsym XF86AudioRaiseVolume exec --no-startup-id amixer -q set Master 5%+ unmute
-bindsym XF86AudioLowerVolume exec --no-startup-id amixer -q set Master 5%- unmute
-bindsym XF86AudioMute exec --no-startup-id amixer -q set Master toggle
-bindsym XF86AudioMicMute exec --no-startup-id amixer -q set Capture toggle
-bindsym XF86MonBrightnessUp exec --no-startup-id xbacklight -inc 5
-bindsym XF86MonBrightnessDown exec --no-startup-id xbacklight -dec 5
+bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume 0 +5%
+bindsym XF86AudioLowerVolume exec --no-startup-id pactl set-sink-volume 0 -5%
+bindsym XF86AudioMute exec --no-startup-id pactl set-sink-mute 0 toggle
+bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute 1 toggle
+bindsym XF86MonBrightnessUp exec --no-startup-id light -A 5
+bindsym XF86MonBrightnessDown exec --no-startup-id light -U 5
 
 ## Lock screen
 bindsym $mod+Escape exec ~/.i3/pixlock.sh
 exec xautolock -time 10 -locker '~/.i3/pixlock.sh' &
 
+set $mode_system System (l) lock, (e) logout, (s) suspend, (h) hibernate, (r) reboot, (Shift+s) shutdown
+mode "$mode_system" {
+    bindsym e exec --no-startup-id i3-msg exit, mode "default"
+    bindsym s exec --no-startup-id $Locker && systemctl suspend, mode "default"
+    bindsym h exec --no-startup-id $Locker && systemctl hibernate, mode "default"
+    bindsym r exec --no-startup-id systemctl reboot, mode "default"
+    bindsym Shift+s exec --no-startup-id systemctl poweroff -i, mode "default"
+
+    # back to normal: Enter or Escape
+    bindsym Return mode "default"
+    bindsym Escape mode "default"
+}
+bindsym $mod+F12 mode "$mode_system"
+
 ## Applications
 bindsym $mod+g exec nvim-qt
 bindsym $mod+i exec firefox
-bindsym $mod+t exec thunar
+bindsym $mod+t exec nautilus
 
-# Set the desktop colour
+# Start up
+
+## Set the desktop colour
 exec --no-startup-id xsetroot -solid "#A7A7A7"
+
+## Compton
+exec --no-startup-id compton -CGb
+
+## Applications
+exec --no-startup-id syncthing-gtk -m
+exec --no-startup-id telegram-desktop -startintray
+exec --no-startup-id blueman-applet

@@ -83,7 +83,7 @@ autocmd BufWritePre * :%s/\s\+$//e
 
 set termguicolors
 set background=dark
-set guifont=Droid\ Sans\ Mono\ for\ Powerline\ 11
+set guifont=Source\ Code\ Pro\ 11
 
 colorscheme base16-gruvbox-dark-pale
 
