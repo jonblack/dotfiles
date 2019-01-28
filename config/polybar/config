@@ -54,7 +54,7 @@ font-2 = FontAwesome5Brands:style=Solid:pixelsize=11
 
 modules-left = i3
 modules-center = date time
-modules-right = backlight xbacklight pulseaudio temperature memory battery wlan_home wlan_work eth_home eth_work
+modules-right = backlight xbacklight pulseaudio temperature memory battery
 
 tray-position = right
 tray-padding = 2
