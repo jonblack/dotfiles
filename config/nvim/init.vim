@@ -83,9 +83,8 @@ autocmd BufWritePre * :%s/\s\+$//e
 
 set termguicolors
 set background=dark
-set guifont=Source\ Code\ Pro\ 11
 
-colorscheme base16-gruvbox-dark-pale
+colorscheme base16-gruvbox-dark-soft
 
 let &colorcolumn=join(range(100,999), ",")
 

@@ -1,1 +1,1 @@
-:GuiFont DejaVu Sans Mono:h10
+:GuiFont Source Code Pro:h10
