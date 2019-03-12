@@ -10,7 +10,7 @@ call plug#begin('~/.local/share/nvim/plugged')
 Plug 'dhruvasagar/vim-table-mode'
 Plug 'Raimondi/delimitMate'
 Plug 'scrooloose/nerdcommenter'
-Plug 'vim-syntastic/syntastic'
+Plug 'w0rp/ale'
 
 " find/search
 Plug 'osyo-manga/vim-over'
@@ -109,15 +109,12 @@ au FileType rust nmap gs <Plug>(rust-def-split)
 au FileType rust nmap gx <Plug>(rust-def-vertical)
 au FileType rust nmap <leader>gd <Plug>(rust-doc)
 
-" syntastic
-set statusline+=%#warningmsg#
-set statusline+=%{SyntasticStatuslineFlag()}
-set statusline+=%*
-
-let g:syntastic_always_populate_loc_list = 1
-let g:syntastic_auto_loc_list = 1
-let g:syntastic_check_on_open = 1
-let g:syntastic_check_on_wq = 0
+" ale
+let g:airline#extensions#ale#enabled = 1
+let g:ale_sign_column_always = 1
+let g:ale_open_list = 1
+nmap <silent> <C-k> <Plug>(ale_previous_wrap)
+nmap <silent> <C-j> <Plug>(ale_next_wrap)
 
 "-----------------------------------------------------------------------------
 " Mappings
