@@ -14,8 +14,6 @@ antigen apply
 # Aliases
 alias ls="ls --color --group-directories-first"
 
-source $HOME/.cargo/env
-
 export PATH=/home/jon/.bin:$PATH
 
 # gnome-keyring-daemon
