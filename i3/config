@@ -191,7 +191,6 @@ exec --no-startup-id compton -CGb
 ## Applications
 exec --no-startup-id syncthing-gtk -m
 exec --no-startup-id telegram-desktop -startintray
-exec --no-startup-id wire-desktop
 exec --no-startup-id blueman-applet
 exec --no-startup-id nm-applet --no-agent
 exec --no-startup-id pasystray
