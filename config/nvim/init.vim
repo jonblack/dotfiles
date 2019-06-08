@@ -3,7 +3,6 @@ scriptencoding utf-8
 "-----------------------------------------------------------------------------
 " Plugins
 "-----------------------------------------------------------------------------
-
 call plug#begin('~/.local/share/nvim/plugged')
 
 " completion/templating
@@ -11,6 +10,7 @@ Plug 'dhruvasagar/vim-table-mode'
 Plug 'Raimondi/delimitMate'
 Plug 'scrooloose/nerdcommenter'
 Plug 'w0rp/ale'
+Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 
 " find/search
 Plug 'osyo-manga/vim-over'
@@ -22,7 +22,6 @@ Plug 'airblade/vim-gitgutter'
 
 " language support
 Plug 'rust-lang/rust.vim', { 'for': 'rust' }
-Plug 'racer-rust/vim-racer'
 
 " look
 Plug 'Yggdroot/indentLine'
@@ -102,17 +101,18 @@ let g:ctrlp_show_hidden = 1
 " indentLine
 let g:indentLine_color_gui = '#343D46'
 
-" vim-racer
-let g:racer_cmd = "/home/jon/.cargo/bin/racer"
-au FileType rust nmap gd <Plug>(rust-def)
-au FileType rust nmap gs <Plug>(rust-def-split)
-au FileType rust nmap gx <Plug>(rust-def-vertical)
-au FileType rust nmap <leader>gd <Plug>(rust-doc)
+" deoplete
+let g:deoplete#enable_at_startup = 1
+call deoplete#custom#option('sources', {
+      \ '_': ['ale', 'buffer', 'around'],
+      \})
 
 " ale
+let g:ale_linters = {'rust': ['rls']}
 let g:airline#extensions#ale#enabled = 1
 let g:ale_sign_column_always = 1
 let g:ale_open_list = 1
+let g:ale_completion_enabled = 0
 nmap <silent> <C-k> <Plug>(ale_previous_wrap)
 nmap <silent> <C-j> <Plug>(ale_next_wrap)
 
