@@ -1,17 +1,43 @@
-#!/bin/bash
+#!/bin/sh
 
-# This script takes a screenshot and pixellates it, then uses it as the i3lock
-# background.  It was borrowed from here:
-# https://faq.i3wm.org/question/83/how-to-run-i3lock-after-computer-inactivity.1.html
+B='#00000000'  # blank
+C='#ffffff22'  # clear ish
+D='#616161cc'  # default
+T='#616161ee'  # text
+W='#c29c9cbb'  # wrong
+V='#769876bb'  # verifying
 
-set -e
+i3lock \
+    --insidevercolor=$C   \
+    --ringvercolor=$V     \
+    \
+    --insidewrongcolor=$C \
+    --ringwrongcolor=$W   \
+    \
+    --insidecolor=$B      \
+    --ringcolor=$D        \
+    --linecolor=$B        \
+    --separatorcolor=$D   \
+    \
+    --verifcolor=$T       \
+    --wrongcolor=$T       \
+    --timecolor=$T        \
+    --datecolor=$T        \
+    --layoutcolor=$T      \
+    --keyhlcolor=$W       \
+    --bshlcolor=$W        \
+    \
+    --screen 1            \
+    --blur 8              \
+    --clock               \
+    --indicator           \
+    --timestr="%H:%M"  \
+    --datestr="%A, %m %Y" \
 
-IMG_PATH=/tmp/i3-pixlock.png
-
-scrot $IMG_PATH
-
-# Pixellate it 10x
-convert $IMG_PATH -scale 10% -scale 1000% $IMG_PATH
-
-# Lock screen displaying this image.
-i3lock -i $IMG_PATH
+    # --veriftext="Drinking verification can..."
+# --wrongtext="Nope!"
+# --textsize=20
+# --modsize=10
+# --timefont=comic-sans
+# --datefont=monofur
+# etc
