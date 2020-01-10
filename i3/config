@@ -143,6 +143,14 @@ bindsym $mod+r mode "resize"
 
 focus_follows_mouse yes
 
+# i3-gaps
+
+for_window [class=".*"] border pixel 3
+client.focused #4c7899 #285577 #ffffff #2e9ef4 #FECD04
+gaps inner 15
+gaps outer 0
+smart_borders on
+
 # status bar
 
 exec_always --no-startup-id /home/jon/.config/polybar/launch.sh
@@ -194,3 +202,4 @@ exec --no-startup-id telegram-desktop -startintray
 exec --no-startup-id blueman-applet
 exec --no-startup-id nm-applet --no-agent
 exec --no-startup-id pasystray
+exec --no-startup-id redshift
